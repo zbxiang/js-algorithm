@@ -1,17 +1,19 @@
 {
-  "name": "leetcode",
+  "name": "algorithm",
   "version": "1.0.0",
-  "description": "leetcode",
+  "description": "JavaScript 数据结构与算法",
   "main": "index.js",
   "scripts": {
-    "test": "jest ./test"
+    "test": "jest ./test",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
     "url": "https://git.imooc.com/coding-315/leetcode.git"
   },
   "keywords": [
-    "leetcode"
+    "algorithm"
   ],
   "author": "cuc_ygh@163.com",
   "license": "Apache-2.0",
@@ -22,7 +24,6 @@
     "babel-jest": "^24.5.0",
     "babel-preset-env": "1.7.0",
     "eslint-plugin-jest": "22.0.0",
-    "jest": "^24.5.0",
     "regenerator-runtime": "0.12.1"
   },
   "devDependencies": {
@@ -31,7 +32,16 @@
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-node": "8.0.0",
     "eslint-plugin-promise": "4.0.1",
-    "eslint-plugin-standard": "4.0.0"
+    "eslint-plugin-standard": "4.0.0",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "directories": {
     "test": "test"
